@@ -10,7 +10,7 @@
 &lt;%= form_for(@${1}, :action =&gt; resource(:${2:plural_resource})) do %&gt;
   &lt;p&gt;&lt;%= text_field :${3:attribute}, :label =&gt; '${3/./\u$0/}' %&gt;&lt;/p&gt;
   &lt;p&gt;
-    &lt;%= submit_button 'Create' %&gt;
+    &lt;%= submit 'Create' %&gt;
   &lt;/p&gt;
 &lt;% end =%&gt;
 
