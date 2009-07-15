@@ -7,14 +7,14 @@
 
 &lt;%= error_messages_for :${1} %&gt;
 
-&lt;%= form_for(@${1}, :action =&gt; resource(@${1})) do %&gt;
-  &lt;p&gt;&lt;%= text_field :${2:attribute}, :label =&gt; '${2/./\u$0/}' %&gt;&lt;/p&gt;
+&lt;%= form_for(@${1}, :action =&gt; resource(:${2:plural_resource})) do %&gt;
+  &lt;p&gt;&lt;%= text_field :${3:attribute}, :label =&gt; '${3/./\u$0/}' %&gt;&lt;/p&gt;
   &lt;p&gt;
     &lt;%= submit_button 'Create' %&gt;
   &lt;/p&gt;
-&lt;% end %&gt;
+&lt;% end =%&gt;
 
-&lt;%= link_to 'Back', resource(:${1}s) %&gt;</string>
+&lt;%= link_to 'Back', resource(:${2}) %&gt;</string>
 	<key>name</key>
 	<string>resource_new</string>
 	<key>scope</key>
